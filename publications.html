@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Roy Maxion | Researcher, Enthusiast, Adventurer</title>
+        <meta name="description" content="Roy Maxion's Personal Website" />
+        <meta name="author" content="Roy Maxion" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+
+        <link rel="stylesheet" href="css/global.css" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Raleway:wght@300;500&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- specific for this page -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+        <link rel="stylesheet" href="css/cards.css" />
+        <link rel="stylesheet" href="css/publications.css" />
+        <script src="js/publications-list.js"></script>
+    </head>
+
+    <body>
+        <!-- start: page navigation -->
+        <nav>
+            <span id="site-title">Roy Maxion</span>
+            <div id="site-navigation">
+                <a href="/index.html"><span>About</span></a>
+                <a href="/data.html"><span>Data Sets</span></a>
+                <a class="active"><span>Publications</span></a>
+                <a href="/contact.html"><span>Contact Me</span></a>
+            </div>
+        </nav>
+        <!-- end: page navigation -->
+
+        <!-- start: page body -->
+        <main>
+            <h1>Selected Publications</h1>
+
+            <p>
+                I published a lot of papers. Here I listed out <span id="publication-count">49</span> of them that I am
+                most proud of.
+            </p>
+
+            <!-- the publications are injected here by javascript. Edit them in js/publication-list.js -->
+            <div id="publication-list"></div>
+
+            <!-- end: cards -->
+
+            <p class="hint-text" style="margin-top: 24px">
+                More publications will appear here as they are made available.
+            </p>
+        </main>
+        <!-- end: page body -->
+
+        <!-- start: footer -->
+        <footer>
+            <span
+                >Copyright © Roy Maxion. Contents licensed under
+                <a href="https://creativecommons.org/licenses/by-nd/2.0/" target="_blank">CC-BY-ND 2.0</a></span
+            >
+        </footer>
+        <!-- end: footer -->
+        <script src="js/publications.js"></script>
+    </body>
+</html>

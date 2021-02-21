@@ -1,0 +1,59 @@
+main {
+    width: 100%;
+}
+
+#portrait {
+    background-image: url('../assets/portrait.png');
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+    margin-bottom: 32px;
+}
+
+#madr {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    color: #3d5166;
+}
+
+.contact {
+    height: 56px;
+    width: 100%;
+    max-width: 288px;
+    display: flex;
+    padding: 0 16px;
+    align-items: center;
+    background-color: white;
+    border-radius: 8px;
+    color: #3d5166;
+    margin-top: 16px;
+}
+
+.contact .material-icons {
+    margin-right: 24px;
+}
+
+#contact-info {
+    display: flex;
+    flex-direction: row;
+}
+
+#mail-address {
+    padding: 0 24px;
+    flex: 1;
+}
+
+#mail-address h3 {
+    margin-top: 0;
+}
+
+@media only screen and (max-width: 800px) {
+    #contact-info {
+        display: block;
+    }
+
+    #mail-address {
+        padding: 0;
+    }
+}

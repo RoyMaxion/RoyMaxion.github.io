@@ -1,0 +1,24 @@
+{
+    "name": "roymaxion.github.io",
+    "version": "0.0.1",
+    "description": "Roy Maxion's Personal GitHub Website",
+    "main": "index.js",
+    "dependencies": {},
+    "devDependencies": {
+        "lite-server": "^2.6.1"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "dev": "lite-server"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/RoyMaxion/RoyMaxion.github.io.git"
+    },
+    "author": "Power Xpert Blue <pxblue@eaton.com> (https://github.com/pxblue)",
+    "license": "CC-BY-ND-2.0",
+    "bugs": {
+        "url": "https://github.com/RoyMaxion/RoyMaxion.github.io/issues"
+    },
+    "homepage": "https://github.com/RoyMaxion/RoyMaxion.github.io#readme"
+}
