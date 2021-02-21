@@ -5,7 +5,7 @@
 var publicationList = [
     {
         keywords: 'Steganography, Anomaly detection',
-        title: 'Detecting Steganography in Images from Mobile Stego Apps Using Random Statistical Properties.',
+        title: 'Detecting Steganography in Images from Mobile Stego Apps Using Random Statistical Properties',
         // link: '(too new, not on the internet yet)',
         citation:
             'Pierre, S.; Lin, L.; Chen, W.; Martin, A.; Guan, Y.; Maxion, R. and Newman, J. “Detecting Steganography in Images from Mobile Stego Apps Using Random Statistical Properties.” International Conference on Forensic and Investigative Science (ICFIS), 15-16 February 2021.London, England.',
@@ -65,11 +65,11 @@ var publicationList = [
         citedBy: 'https://scholar.google.com/scholar?cites=10218766869671740591&as_sdt=5,39&sciodt=0,39&hl=en',
     },
     {
-        keywords: 'Keystroke dynamics, rhythms',
+        keywords: 'Keystroke dynamics, Rhythms',
         title: 'Clusters and Markers for Keystroke Typing Rhythms',
         link: 'https://www.usenix.org/system/files/conference/laser2014/laser-2014-paper-lau.pdf',
         citation:
-            '.Lau, Shing-hon and Maxion, Roy A.“Clusters and Markers for Keystroke Typing Rhythms."In Proceedings of the 3rd Annual Workshop on Learning from Authoritative Security Experiment Results (LASER 2014), Arlington, Virginia, 15-16 October 2014, ACM Press, New York, NY, 2014.',
+            'Lau, Shing-hon and Maxion, Roy A.“Clusters and Markers for Keystroke Typing Rhythms."In Proceedings of the 3rd Annual Workshop on Learning from Authoritative Security Experiment Results (LASER 2014), Arlington, Virginia, 15-16 October 2014, ACM Press, New York, NY, 2014.',
         date: 'October 2014',
         publisher: 'LASER 2014',
         citedBy: 'https://scholar.google.com/scholar?cites=18433182455823873927&as_sdt=5,39&sciodt=0,39&hl=en',
@@ -87,7 +87,7 @@ var publicationList = [
     {
         keywords: 'Mouse dynamics, Support vector machine classification, Classification algorithms',
         title: 'Comparing classification algorithm for mouse dynamics based user identification',
-        link: 'https://ieeexplore.ieee.org/document/6327662',
+        link: 'https://ieeexplore.ieee.org/document/6374551',
         citation:
             'Shen, Chao; Cai, Zhongmin; Maxion, Roy A.; Xiang, Guang and Guan, Xiaohong. "Comparing Classification Algorithms for Mouse Dynamics based User Identification." IEEE 5th International Conference on Biometrics: Theory, Applications and Systems (BTAS 2012), 23-26 September 2012, Washington, DC, pp. 61-66, IEEE Press, Piscataway, New Jersey.',
         date: 'September 2012',
@@ -167,12 +167,112 @@ var publicationList = [
     },
     {
         keywords: 'Writing, Personal digital assistants, Biometrics, Handwriting recognition',
-        title: 'User Discrimination Through Structured Writing on PDAs.',
+        title: 'User Discrimination Through Structured Writing on PDAs',
         link: 'https://www.cs.cmu.edu/~maxion/pubs/KillourhyMaxion07.pdf',
         citation:
             'Roberts, Rachel R. M.; Maxion, Roy A.; Killourhy, Kevin S., and Arshad, Fahd. "User Discrimination Through Structured Writing on PDAs." In International Conference on Dependable Systems & Networks (DSN-07), pp. 378-387, Edinburgh, Scotland, 25-28 June 2007. IEEE Computer Society Press, Los Alamitos, California, 2007.',
         date: 'June 2007',
         publisher: 'DSN-07',
         citedBy: 'https://scholar.google.com/scholar?cites=13892723574521503601&as_sdt=5,39&sciodt=0,39&hl=en',
+    },
+    {
+        keywords: 'User interfaces, Usability, Error analysis',
+        title: 'User Interface Defect Detection by Hesitation Analysis',
+        link: 'https://ieeexplore.ieee.org/document/1633496',
+        citation:
+            'Reeder, Robert W. and Maxion, Roy A. "User Interface Defect Detection by Hesitation Analysis." In International Conference on Dependable Systems & Networks (DSN-06), pp. 61-70, Philadelphia, Pennsylvania, 25-28 June 2006. IEEE Computer Society Press, Los Alamitos, California, 2006.',
+        date: 'June 2006',
+        publisher: 'DSN-06',
+        citedBy: 'https://scholar.google.com/scholar?cites=14046494203095313397&as_sdt=5,39&sciodt=0,39&hl=en',
+    },
+    {
+        keywords: 'Detectors, Diversity reception, Intrusion detection, Security',
+        title: 'The Effects of Algorithmic Diversity on Anomaly Detector Performance',
+        link: 'https://ieeexplore.ieee.org/document/1467796',
+        citation:
+            'Tan, Kymie M. C. and Maxion, Roy A. "The Effects of Algorithmic Diversity on Anomaly Detector Performance." In International Conference on Dependable Systems & Networks (DSN-05), pp. 216-225, Yokohama, Japan, 28 June - 01 July 2005. IEEE Computer Society Press, Los Alamitos, California, 2005.',
+        date: '2005',
+        publisher: 'DSN-05',
+        citedBy: 'https://scholar.google.com/scholar?cites=15870518708722479293&as_sdt=5,39&sciodt=0,39&hl=en',
+    },
+    {
+        keywords: 'User interface, Dependability',
+        title: 'User Interface Dependability through Goal-Error Prevention',
+        link: 'https://ieeexplore.ieee.org/document/1467780',
+        citation:
+            'Reeder, Robert W. and Maxion, Roy A. "User Interface Dependability through Goal-Error Prevention." In International Conference on Dependable Systems & Networks (DSN-05), pp. 60-69, Yokohama, Japan, 28 June - 01 July 2005. IEEE Computer Society Press, Los Alamitos, California, 2005.',
+        date: '2005',
+        publisher: 'DSN-05',
+        citedBy: 'https://scholar.google.com/scholar?cites=3506170524639402806&as_sdt=5,39&sciodt=0,39&hl=en',
+    },
+    {
+        keywords: 'Taxonomy, Detectors',
+        title: 'A Defense-Centric Taxonomy Based on Attack Manifestations',
+        link: 'https://ieeexplore.ieee.org/document/1311881',
+        citation:
+            'Killourhy, Kevin S.; Maxion, Roy A. and Tan, Kymie M. C. "A Defense-Centric Taxonomy Based on Attack Manifestations." In International Conference on Dependable Systems & Networks (DSN-04), pp. 102-111, Florence, Italy, 28 June - 01 July 2004. IEEE Computer Society Press, Los Alamitos, California, 2004.',
+        date: '2004',
+        publisher: 'DSN-04',
+        citedBy: 'https://scholar.google.com/scholar?cites=6310452479678320007&as_sdt=5,39&sciodt=0,39&hl=en',
+    },
+    {
+        keywords: 'Error analysis, Data privacy, Classification algorithms',
+        title: 'Masquerade Detection Augmented with Error Analysis',
+        link: 'https://ieeexplore.ieee.org/document/1311881',
+        citation:
+            'Maxion, Roy A. and Townsend, Tahlia N. "Masquerade Detection Augmented with Error Analysis." IEEE Transactions on Reliability, Special Section on Quality/Reliability Engineering of Information Systems, Vol. 53, No. 1, pp. 124-147, March 2004.',
+        date: '2004',
+        publisher: 'DSN-04',
+        citedBy: 'https://scholar.google.com/scholar?cites=6310452479678320007&as_sdt=5,39&sciodt=0,39&hl=en',
+    },
+    {
+        keywords: 'Data privacy',
+        title: 'Masquerade Detection Using Enriched Command Lines',
+        link: 'https://ieeexplore.ieee.org/document/1209911',
+        citation:
+            'Maxion, Roy A. "Masquerade Detection Using Enriched Command Lines." In International Conference on Dependable Systems & Networks (DSN-03), pp. 5-14, San Francisco, California, 22-25 June 2003. IEEE Computer Society Press, Los Alamitos, California, 2003.',
+        date: 'June 2003',
+        publisher: 'DSN-03',
+        citedBy: 'https://scholar.google.com/scholar?cites=825725654587454467&as_sdt=5,39&sciodt=0,39&hl=en',
+    },
+    {
+        keywords: 'Anomaly detection, Intrusion detection',
+        title: 'Determining the Operational Limits of an Anomaly-Based Intrusion Detector',
+        link: 'https://ieeexplore.ieee.org/document/1159659',
+        citation:
+            'Tan, Kymie M. C. and Maxion, Roy A. "Determining the Operational Limits of an Anomaly-Based Intrusion Detector." IEEE Journal on Selected Areas in Communications, Special Issue on Design and Analysis Techniques for Security Assurance, Vol. 21, No. 1, pp. 96-110, January 2003.',
+        date: 'January 2003',
+        publisher: 'IEEE Journal on Selected Areas in Communications',
+        citedBy: 'https://scholar.google.com/scholar?cites=5724822168739593327&as_sdt=5,39&sciodt=0,39&hl=en',
+    },
+    {
+        keywords: 'Anomaly detection, Intrusion detection',
+        title: 'Undermining an Anomaly-Based Intrusion Detection System Using Common Exploits',
+        link: 'https://link.springer.com/chapter/10.1007/3-540-36084-0_4',
+        citation:
+            'Tan, Kymie M. C.; Killourhy, Kevin S. and Maxion, Roy A. "Undermining an Anomaly-Based Intrusion Detection System Using Common Exploits." In Fifth International Symposium on Recent Advances in Intrusion Detection (RAID-2002), Andreas Wespi, Giovanni Vigna and Luca Deri (Eds.), 16-18 October 2002, Zurich, Switzerland, pp. 54-73. Lecture Notes in Computer Science #2516, Springer-Verlag, Berlin, 2002.',
+        date: 'October 2002',
+        publisher: 'RAID-2002',
+        citedBy: 'https://scholar.google.com/scholar?cites=18277571524507643037&as_sdt=5,39&sciodt=0,39&hl=en',
+    },
+    {
+        keywords: 'Error analysis, Anomaly detection, Intrusion detection',
+        title: 'Masquerade Detection Using Truncated Command Lines',
+        link: 'https://ieeexplore.ieee.org/document/1028903',
+        citation:
+            'Maxion, Roy A. and Townsend, Tahlia N. "Masquerade Detection Using Truncated Command Lines." International Conference on Dependable Systems and Networks (DSN-02), pp. 219-228, Washington, D.C. 23-26 June 2002. IEEE Computer Society Press, Los Alamitos, California, 2002.',
+        date: 'June 2002',
+        publisher: 'DSN-2002',
+        citedBy: 'https://scholar.google.com/scholar?cites=11738963109920321399&as_sdt=5,39&sciodt=0,39&hl=en',
+    },
+    {
+        keywords: 'Error analysis, Anomaly detection, Intrusion detection',
+        title: 'Why 6? Defining the Operational Limits of stide, an Anomaly-Based Intrusion Detector',
+        link: 'https://ieeexplore.ieee.org/document/1028903',
+        citation:
+            'Tan, Kymie M. C. and Maxion, Roy A. "Why 6? Defining the Operational Limits of stide, an Anomaly-Based Intrusion Detector." IEEE Symposium on Security and Privacy, pages 188-201, Berkeley, California, 12-15 May 2002. IEEE Computer Society Press, Los Alamitos, California, 2002.',
+        date: 'May 2002',
+        publisher: 'IEEE Symposium on Security and Privacy',
+        citedBy: 'https://scholar.google.com/scholar?cites=10754253700499221201&as_sdt=5,39&sciodt=0,39&hl=en',
     },
 ];

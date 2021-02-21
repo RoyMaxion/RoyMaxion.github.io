@@ -34,6 +34,10 @@ main {
     margin-right: 24px;
 }
 
+a.contact {
+    text-decoration: none;
+}
+
 #contact-info {
     display: flex;
     flex-direction: row;

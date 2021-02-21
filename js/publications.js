@@ -47,6 +47,7 @@ function createPublicationCard(paper) {
     if (paper.date) {
         var dateDOM = document.createElement('span');
         dateDOM.className = 'tag';
+        dateDOM.setAttribute('title', 'Date published');
         var dateIconDOM = document.createElement('span');
         dateIconDOM.className = 'material-icons';
         dateIconDOM.appendChild(document.createTextNode('event'));
@@ -59,6 +60,7 @@ function createPublicationCard(paper) {
     if (paper.publisher) {
         var publisherDOM = document.createElement('span');
         publisherDOM.className = 'tag';
+        publisherDOM.setAttribute('title', 'Publisher');
         var publisherIconDOM = document.createElement('span');
         publisherIconDOM.className = 'material-icons';
         publisherIconDOM.appendChild(document.createTextNode('text_snippet'));
