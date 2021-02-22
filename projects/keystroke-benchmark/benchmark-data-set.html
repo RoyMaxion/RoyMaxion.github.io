@@ -33,6 +33,8 @@
         </nav>
         <!-- end: page navigation -->
 
+        <span id="top"></span>
+
         <!-- start: page body -->
         <main>
             <span class="back-to-page">
@@ -317,11 +319,13 @@
                                 <code>DD</code> times.<br /><br />
 
                                 Consider the following one-line example of what you will see in the data:
-                                <pre>
+                                <div class="centered-code-block">
+                                    <pre>
 subject  sessionIndex  rep      H.period   DD.period.t   UD.period.t     ...
-    s002             1    1        0.1491        0.3979        0.2488     ...
+   s002             1    1        0.1491        0.3979        0.2488     ...
 </pre
-                                >
+                                    >
+                                </div>
 
                                 The example presents typing data for subject 2, session 1, repetition 1. The
                                 <code>period</code> key was held down for 0.1491 seconds (149.1 milliseconds); the time
@@ -840,6 +844,12 @@ Mahalanobis    0.110  0.065
             </section>
         </main>
         <!-- end: page body -->
+
+        <!-- start: back to top button -->
+        <a id="back-to-top-button" href="#top">
+            <span class="material-icons">arrow_upward</span>
+            Top
+        </a>
 
         <!-- start: footer -->
         <footer>

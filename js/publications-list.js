@@ -109,14 +109,14 @@ var publicationList = [
         title: 'Making experiments dependable',
         link: 'https://www.cs.cmu.edu/~maxion/pubs/Maxion12.pdf',
         citation:
-            'Killourhy, Kevin S. and Maxion, Roy A. "Free vs. Transcribed Text for Keystroke-Dynamics Evaluations." LASER-12: Proceedings of the 2012 Workshop: Learning from Authoritative Security Experiment Results, pp. 1-8, 18-19 July 2012, Arlington, VA. ACM, New York, New York.',
+            'Maxion, Roy A. "Making Experiments Dependable." The Next Wave / NSA Magazine, Vol. 19, No. 1, pp. 13-22, March 2012, National Security Agency, Ft. Meade, Maryland. Reprinted from Dependable and Historic Computing , LNCS 6875, pp. 344-357, Springer, Berlin, 2011.',
         date: '2011',
         publisher: 'Springer, Berlin, Heidelberg',
         citedBy: 'https://scholar.google.com/scholar?cites=10925824603872210709&as_sdt=5,39&sciodt=0,39&hl=en',
     },
     {
         keywords: 'Anomaly detection, Keystroke dynamics, Experimental methodology',
-        title: 'Why Did My Detector Do That?! Predicting Keystroke-Dynamics Error Rates.',
+        title: 'Why Did My Detector Do That?! Predicting Keystroke-Dynamics Error Rates',
         link: 'https://www.cs.cmu.edu/~maxion/pubs/KillourhyMaxion10.pdf',
         citation:
             'Killourhy, Kevin S. and Maxion, Roy A. "Why Did My Detector Do That?! Predicting Keystroke-Dynamics Error Rates." 13th International Symposium on Recent Advances in Intrusion Detection, 15-17 September 2010, Ottawa, Ontario, Canada. S. Jha, R. Sommer, and C. Kreibich (Eds.): RAID 2010, Lecture Notes in Computer Science, LNCS Vol. 6307, pp. 256-276, Springer-Verlag, Berlin/Heidelberg, 2010. ISBN 978-3-642-15511-6.',
@@ -274,5 +274,105 @@ var publicationList = [
         date: 'May 2002',
         publisher: 'IEEE Symposium on Security and Privacy',
         citedBy: 'https://scholar.google.com/scholar?cites=10754253700499221201&as_sdt=5,39&sciodt=0,39&hl=en',
+    },
+    {
+        keywords: 'Anomaly detection',
+        title: 'Anomaly Detection in Embedded Systems',
+        link: 'https://ieeexplore.ieee.org/document/980003',
+        citation:
+            'Maxion, Roy A. and Tan, Kymie M. C. "Anomaly Detection in Embedded Systems." IEEE Transactions on Computers, Vol. 51, No. 2, pp. 108-120, February 2002',
+        date: 'February 2002',
+        publisher: 'IEEE Transactions on Computers',
+        citedBy: 'https://scholar.google.com/scholar?cites=595885502622327263&as_sdt=5,39&sciodt=0,39&hl=en',
+    },
+    {
+        keywords: 'Intrusion detection',
+        title: 'Markov Chains, Classifiers and Intrusion Detection',
+        link: 'http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.103.1600&rep=rep1&type=pdf',
+        citation:
+            'Jha, Somesh; Tan, Kymie M. C. and Maxion, Roy A. "Markov Chains, Classifiers and Intrusion Detection." 14th IEEE Computer Security Foundations Workshop, Cape Breton, Nova Scotia, Canada, pp. 206-219, 11-13 June 2001.',
+        date: 'June 2001',
+        publisher: '14th IEEE Computer Security Foundations Workshop',
+        citedBy: 'https://scholar.google.com/scholar?cites=14951597002778231695&as_sdt=5,39&sciodt=0,39&hl=en',
+    },
+    {
+        keywords: 'Exception Handling',
+        title: 'Eliminating Exception Handling Errors with Dependability Cases: A Comparative, Empirical Study',
+        link: 'https://ieeexplore.ieee.org/document/877848',
+        citation:
+            'Maxion, Roy A. and Olszewski, Robert T. "Eliminating Exception Handling Errors with Dependability Cases: A Comparative, Empirical Study." IEEE Transactions on Software Engineering, Vol. 26, No. 9, pages 888-906, September 2000.',
+        date: 'September 2000',
+        publisher: 'IEEE Transactions on Software Engineering',
+        citedBy: 'https://scholar.google.com/scholar?cites=217187384955937648&as_sdt=5,39&sciodt=0,39&hl=en',
+    },
+    {
+        keywords: 'Anomaly Detection',
+        title: 'Benchmarking Anomaly-Based Detection Systems',
+        link: 'https://ieeexplore.ieee.org/document/857599',
+        citation:
+            'Maxion, Roy A. and Tan, Kymie M. C. "Benchmarking Anomaly-Based Detection Systems." In International Conference on Dependable Systems and Networks, pages 623-630, New York, New York; 25-28 June 2000. IEEE Computer Society Press.',
+        date: 'June 2000',
+        publisher: 'International Conference on Dependable Systems and Networks',
+        citedBy: 'https://scholar.google.com/scholar?cites=14277081111696497240&as_sdt=5,39&sciodt=0,39&hl=en',
+    },
+    {
+        keywords: 'Dependability',
+        title: 'Improving Software Robustness with Dependability Cases',
+        link: 'https://ieeexplore.ieee.org/document/689485',
+        citation:
+            'Maxion, Roy A. and Olszewski, Robert T. "Improving Software Robustness with Dependability Cases." In 28th International Symposium on Fault-Tolerant Computing, pages 346-355, Munich, Germany; 23-25 June 1998. IEEE Computer Society Press.',
+        date: 'June 1998',
+        publisher: '28th International Symposium on Fault-Tolerant Computing',
+        citedBy: 'https://scholar.google.com/scholar?cites=5376678197984818694&as_sdt=5,39&sciodt=0,39&hl=en',
+    },
+    {
+        keywords: 'Anomaly detection',
+        title: 'Artificial Neural Network Based Approaches to Detection and Diagnosis of Plasma-Etch Anomalies',
+        link: 'http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.68.6084&rep=rep1&type=pdf',
+        citation:
+            'Baluja, S. and Maxion, R.A. "Artificial Neural Network Based Approaches to Detection and Diagnosis of Plasma-Etch Anomalies." The Journal of Intelligent Systems. Vol. 7, Nos. 1-2, pages 57-82, 1997.',
+        date: '1997',
+        publisher: 'The Journal of Intelligent Systems',
+        citedBy: 'https://scholar.google.com/scholar?cites=17200314314882525742&as_sdt=5,39&sciodt=0,39&hl=en',
+    },
+    {
+        keywords: 'Dependability',
+        title: 'Mitigating Operator-Induced Unavailability by Matching Imprecise Queries',
+        link: 'https://ieeexplore.ieee.org/document/535879',
+        citation:
+            'Maxion, R.A. and Syme, P.A. "Mitigating Operator-Induced Unavailability by Matching Imprecise Queries." In Twenty-Sixth International Symposium on Fault-Tolerant Computing, Sendai, Japan, June 1996',
+        date: 'June 1996',
+        publisher: 'Twenty-Sixth International Symposium on Fault-Tolerant Computing',
+        citedBy: 'https://scholar.google.com/scholar?cites=12943042291534634086&as_sdt=5,39&sciodt=0,39&hl=en',
+    },
+    {
+        keywords: 'Dependability',
+        title: 'Dependability at the User Interface',
+        link: 'https://ieeexplore.ieee.org/document/466944',
+        citation:
+            'Maxion, R.A. and deChambeau A.L. "Dependability at the User Interface." In Twenty-Fifth International Symposium on Fault-Tolerant Computing, Pasadena, California, June 1995.',
+        date: 'June 1995',
+        publisher: 'Twenty-Fifth International Symposium on Fault-Tolerant Computing',
+        citedBy: 'https://scholar.google.com/scholar?cites=7144844279502314799&as_sdt=5,39&sciodt=0,39&hl=en',
+    },
+    {
+        keywords: 'Anomaly Detection',
+        title: 'Detection and Discrimination of Injected Network Faults',
+        link: 'https://ieeexplore.ieee.org/document/627323',
+        citation:
+            'Maxion, R.A. and Olszewski, R.T. "Detection and Discrimination of Injected Network Faults." In Twenty-Third International Symposium on Fault-Tolerant Computing, Toulouse, France, June 1993.',
+        date: 'June 1993',
+        publisher: 'Twenty-Third International Symposium on Fault-Tolerant Computing',
+        citedBy: 'https://scholar.google.com/scholar?cites=3851995735176640875&as_sdt=5,39&sciodt=0,39&hl=en',
+    },
+    {
+        keywords: 'Anomaly Detection',
+        title: 'A Case Study of Ethernet Anomalies in a Distributed Computing Environment',
+        link: 'https://ieeexplore.ieee.org/document/58721',
+        citation:
+            'R. A. Maxion and F. E. Feather, "A case study of Ethernet anomalies in a distributed computing environment," in IEEE Transactions on Reliability, vol. 39, no. 4, pp. 433-443, Oct. 1990, doi: 10.1109/24.58721.',
+        date: 'October 1990',
+        publisher: 'IEEE Transactions on Reliability',
+        citedBy: 'https://scholar.google.com/scholar?oi=bibs&hl=en&cites=8478128549971115963&as_sdt=5',
     },
 ];
