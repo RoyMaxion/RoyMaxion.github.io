@@ -21,6 +21,7 @@ function createPublicationCard(paper) {
         titleDOM.href = paper.link;
         titleDOM.setAttribute('target', '_blank');
         var titleTextDOM = document.createElement('h3');
+        titleTextDOM.className = 'hover-effect-link';
         titleTextDOM.appendChild(document.createTextNode(paper.title));
         titleDOM.appendChild(titleTextDOM);
         cardDOM.appendChild(titleDOM);
@@ -72,7 +73,7 @@ function createPublicationCard(paper) {
     // add "see who cited this"
     if (paper.citedBy) {
         var citedByDOM = document.createElement('a');
-        citedByDOM.className = 'tag';
+        citedByDOM.className = 'tag hover-effect-link';
         citedByDOM.href = paper.citedBy;
         citedByDOM.setAttribute('target', '_blank');
         var citedByIconDOM = document.createElement('span');
@@ -88,7 +89,7 @@ function createPublicationCard(paper) {
     // add "view scripts and data set"
     if (paper.dataSet) {
         var dataSetDOM = document.createElement('a');
-        dataSetDOM.className = 'tag';
+        dataSetDOM.className = 'tag hover-effect-link';
         dataSetDOM.href = paper.dataSet;
         dataSetDOM.setAttribute('target', '_blank');
         var dataSetIconDOM = document.createElement('span');

@@ -13,13 +13,6 @@
     margin-top: -0.25em;
 }
 
-.card a h3:hover,
-.card a.tag:hover {
-    color: #287bd1;
-    background-color: rgba(40, 123, 209, 0.1);
-    transition-duration: 200ms;
-}
-
 .card:hover {
     box-shadow: none;
 }

@@ -1,0 +1,109 @@
+.hdr {
+    color: blue;
+    font-style: italic;
+    cursor: pointer;
+}
+
+.ans {
+    padding: 8px 0 32px;
+}
+
+dl.bib dt {
+    float: left;
+    padding-right: 8px;
+}
+
+dl.bib dt:before {
+    content: '[';
+}
+
+dl.bib dt:after {
+    content: ']';
+}
+
+dl.bib dd {
+    padding: 0 0 10 0;
+}
+
+main ul li {
+    margin-bottom: 0.5em;
+}
+
+code {
+    background-color: rgba(0, 0, 0, 0.03);
+    padding: 0.1em;
+    margin: 0 0.1em;
+    border-radius: 2px;
+}
+
+div.centered-code-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.lifted-anchors {
+    position: relative;
+    top: -100px;
+}
+
+table {
+    background-color: rgba(0, 0, 0, 0.03);
+}
+
+td,
+th {
+    padding: 0.2em 0.5em;
+}
+
+th {
+    border-bottom: var(--hint-text) 2px solid;
+}
+
+tr:nth-child(even) {
+    background-color: rgba(67, 99, 204, 0.05);
+}
+
+tr:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.call-to-action-download {
+    padding: 16px;
+    background-color: white;
+    display: block;
+    border-radius: 16px;
+    text-decoration: none;
+    color: var(--primary-text);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.call-to-action-download:hover {
+    box-shadow: 0px 2px 4px -1px rgba(66, 78, 84, 0.2), 0px 4px 5px rgba(66, 78, 84, 0.14),
+        0px 1px 10px rgba(66, 78, 84, 0.12);
+    transition-duration: 400ms;
+}
+
+.call-to-action-download .text {
+    margin-left: 24px;
+}
+
+.call-to-action-download .text .title span:nth-child(1) {
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--secondary-text);
+}
+
+.call-to-action-download .text .title span:nth-child(2) {
+    font-size: 0.8rem;
+    margin-left: 1em;
+    color: var(--secondary-text);
+}
+
+.call-to-action-download .text .subtitle {
+    color: var(--secondary-text);
+}
