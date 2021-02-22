@@ -94,6 +94,7 @@ main {
     flex: 1;
     padding: 32px;
     font-size: 1rem;
+    width: 100%;
 }
 
 main section {
