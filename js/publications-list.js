@@ -10,7 +10,7 @@ var publicationList = [
         citation:
             'Pierre, S.; Lin, L.; Chen, W.; Martin, A.; Guan, Y.; Maxion, R. and Newman, J. “Detecting Steganography in Images from Mobile Stego Apps Using Random Statistical Properties.” International Conference on Forensic and Investigative Science (ICFIS), 15-16 February 2021.London, England.',
         date: 'February 2021',
-        publisher: 'IEEE Security & Privacy',
+        publisher: 'ICFIS',
         // citedBy: '(too new, no one wrote a paper yet)',
     },
     {
@@ -44,7 +44,7 @@ var publicationList = [
         // citedBy: '(too new, no one wrote a paper yet)',
     },
     {
-        keywords: 'Stress, Lips, Stress measurement, Moniotring, Biomedical monitoring, Data visualization',
+        keywords: 'Stress, Lips, Stress measurement, Monitoring, Biomedical monitoring, Data visualization',
         title: 'Towards Independent Stress Detection: a Dependent Model Using Facial Action Units',
         link: 'https://ieeexplore.ieee.org/document/8516497',
         citation:
@@ -55,7 +55,7 @@ var publicationList = [
     },
 
     {
-        keywords: 'Stress, Lips, Stress measurement, Moniotring, Biomedical monitoring, Data visualization',
+        keywords: 'Cyber security experiments, Hazard studies',
         title: 'Application of HAZOP to the Design of Cyber Security Experiments',
         link: 'https://ieeexplore.ieee.org/document/7474170',
         citation:
@@ -86,7 +86,7 @@ var publicationList = [
     },
     {
         keywords: 'Mouse dynamics, Support vector machine classification, Classification algorithms',
-        title: 'Comparing classification algorithm for mouse dynamics based user identification',
+        title: 'Comparing Classification Algorithms for Mouse Dynamics based User Identification',
         link: 'https://ieeexplore.ieee.org/document/6374551',
         citation:
             'Shen, Chao; Cai, Zhongmin; Maxion, Roy A.; Xiang, Guang and Guan, Xiaohong. "Comparing Classification Algorithms for Mouse Dynamics based User Identification." IEEE 5th International Conference on Biometrics: Theory, Applications and Systems (BTAS 2012), 23-26 September 2012, Washington, DC, pp. 61-66, IEEE Press, Piscataway, New Jersey.',
@@ -96,7 +96,7 @@ var publicationList = [
     },
     {
         keywords: 'Keystroke dynamics',
-        title: 'Free vs. transcribed text for keystroke-dynamics evaluations',
+        title: 'Free vs. Transcribed Text for Keystroke-Dynamics Evaluations',
         link: 'https://dl.acm.org/doi/10.1145/2379616.2379617',
         citation:
             'Killourhy, Kevin S. and Maxion, Roy A. "Free vs. Transcribed Text for Keystroke-Dynamics Evaluations." LASER-12: Proceedings of the 2012 Workshop: Learning from Authoritative Security Experiment Results, pp. 1-8, 18-19 July 2012, Arlington, VA. ACM, New York, New York.',
@@ -106,8 +106,8 @@ var publicationList = [
     },
     {
         keywords: 'Experimentation, Measurement, Operational definitions, Validity',
-        title: 'Making experiments dependable',
-        link: 'https://www.cs.cmu.edu/~maxion/pubs/Maxion12.pdf',
+        title: 'Making Experiments Dependable',
+        link: '/papers/Maxion2011.pdf',
         citation:
             'Maxion, Roy A. "Making Experiments Dependable." The Next Wave / NSA Magazine, Vol. 19, No. 1, pp. 13-22, March 2012, National Security Agency, Ft. Meade, Maryland. Reprinted from Dependable and Historic Computing , LNCS 6875, pp. 344-357, Springer, Berlin, 2011.',
         date: '2011',
@@ -117,7 +117,7 @@ var publicationList = [
     {
         keywords: 'Anomaly detection, Keystroke dynamics, Experimental methodology',
         title: 'Why Did My Detector Do That?! Predicting Keystroke-Dynamics Error Rates',
-        link: 'https://www.cs.cmu.edu/~maxion/pubs/KillourhyMaxion10.pdf',
+        link: '/papers/KillourhyMaxion2010.pdf',
         citation:
             'Killourhy, Kevin S. and Maxion, Roy A. "Why Did My Detector Do That?! Predicting Keystroke-Dynamics Error Rates." 13th International Symposium on Recent Advances in Intrusion Detection, 15-17 September 2010, Ottawa, Ontario, Canada. S. Jha, R. Sommer, and C. Kreibich (Eds.): RAID 2010, Lecture Notes in Computer Science, LNCS Vol. 6307, pp. 256-276, Springer-Verlag, Berlin/Heidelberg, 2010. ISBN 978-3-642-15511-6.',
         date: 'September 2010',
@@ -127,28 +127,28 @@ var publicationList = [
     {
         keywords: 'Biometrics, Keystroke dynamics, Authentication, Telegraphy',
         title: 'Keystroke Biometrics with Number-Pad Input',
-        link: 'https://www.cs.cmu.edu/~maxion/pubs/MaxionKillourhy10a.pdf',
+        link: '/papers/MaxionKillourhy2010.pdf',
         citation:
             'Maxion, Roy A. and Killourhy, Kevin S. "Keystroke Biometrics with Number-Pad Input." In IEEE/IFIP International Conference on Dependable Systems & Networks (DSN-10), pp. 201-210, Chicago, Illinois, 28 June to 01 July 2010. IEEE Computer Society Press, Los Alamitos, California, 2010.',
-        date: '2010',
-        publisher: 'IEEE Computer Society Press',
+        date: 'June - July 2010',
+        publisher: 'DSN-10',
         citedBy: 'https://scholar.google.com/scholar?cites=2361092647544153643&as_sdt=5,39&sciodt=0,39&hl=en',
     },
     {
         keywords: 'Keystroke dynamics',
         title: 'Comparing Anomaly-Detection Algorithms for Keystroke Dynamics',
-        link: 'https://www.cs.cmu.edu/~maxion/pubs/KillourhyMaxion09.pdf',
+        link: '/papers/KillourhyMaxion2009.pdf',
         citation:
             'Killourhy, Kevin S. and Maxion, Roy A. "Comparing Anomaly-Detection Algorithms for Keystroke Dynamics." In International Conference on Dependable Systems & Networks (DSN-09), pp. 125-134, Estoril, Lisbon, Portugal, 29 June to 02 July 2009. IEEE Computer Society Press, Los Alamitos, California, 2009.',
-        date: '2009',
-        publisher: 'IEEE Computer Society Press',
+        date: 'June - July 2009',
+        publisher: 'DSN-09',
         citedBy: 'https://scholar.google.com/scholar?cites=3911431193134176570&as_sdt=5,39&sciodt=0,39&hl=en',
-        dataSet: 'http://www.cs.cmu.edu/~keystroke',
+        dataSet: '/projects/keystroke-benchmark/benchmark-data-set.html',
     },
     {
         keywords: 'Keystroke dynamics',
         title: 'The Effect of Clock Resolution on Keystroke Dynamics',
-        link: 'https://www.cs.cmu.edu/~maxion/pubs/KillourhyMaxion08a.pdf',
+        link: '/papers/KillourhyMaxion2008.pdf',
         citation:
             'Killourhy, Kevin S. and Maxion, Roy A. "The Effect of Clock Resolution on Keystroke Dynamics." In 11th International Symposium on Recent Advances in Intrusion Detection (RAID-08), 15-17 September 2008, Cambridge, Massachusetts, R. Lippmann, E. Kirda and A. Trachtenberg (Eds.), Lecture Notes in Computer Science (LNCS), Vol. 5230, pp. 331-350, Springer-Verlag, Berlin, Heidelberg.',
         date: 'September 2008',
@@ -158,7 +158,7 @@ var publicationList = [
     {
         keywords: 'Detectors, Data privacy, Computerized monitoring, Postal services',
         title: 'Toward Realistic and Artifact-Free Insider-Threat Data',
-        link: 'https://www.cs.cmu.edu/~maxion/pubs/KillourhyMaxion07.pdf',
+        link: '/papers/KillourhyMaxion2007.pdf',
         citation:
             'Killourhy, Kevin S. and Maxion, Roy A. "Toward Realistic and Artifact-Free Insider-Threat Data." In 23rd Annual Computer Security Applications Conference (ACSAC-07), pp. 87-96, Miami Beach, Florida, 10-14 December 2007. IEEE Computer Society Press, Los Alamitos, California, 2007.',
         date: 'December 2007',
@@ -168,7 +168,7 @@ var publicationList = [
     {
         keywords: 'Writing, Personal digital assistants, Biometrics, Handwriting recognition',
         title: 'User Discrimination Through Structured Writing on PDAs',
-        link: 'https://www.cs.cmu.edu/~maxion/pubs/KillourhyMaxion07.pdf',
+        link: '/papers/RobertsMaxionKillourhyArshad2007.pdf',
         citation:
             'Roberts, Rachel R. M.; Maxion, Roy A.; Killourhy, Kevin S., and Arshad, Fahd. "User Discrimination Through Structured Writing on PDAs." In International Conference on Dependable Systems & Networks (DSN-07), pp. 378-387, Edinburgh, Scotland, 25-28 June 2007. IEEE Computer Society Press, Los Alamitos, California, 2007.',
         date: 'June 2007',
@@ -191,7 +191,7 @@ var publicationList = [
         link: 'https://ieeexplore.ieee.org/document/1467796',
         citation:
             'Tan, Kymie M. C. and Maxion, Roy A. "The Effects of Algorithmic Diversity on Anomaly Detector Performance." In International Conference on Dependable Systems & Networks (DSN-05), pp. 216-225, Yokohama, Japan, 28 June - 01 July 2005. IEEE Computer Society Press, Los Alamitos, California, 2005.',
-        date: '2005',
+        date: 'June - July 2005',
         publisher: 'DSN-05',
         citedBy: 'https://scholar.google.com/scholar?cites=15870518708722479293&as_sdt=5,39&sciodt=0,39&hl=en',
     },
@@ -201,7 +201,7 @@ var publicationList = [
         link: 'https://ieeexplore.ieee.org/document/1467780',
         citation:
             'Reeder, Robert W. and Maxion, Roy A. "User Interface Dependability through Goal-Error Prevention." In International Conference on Dependable Systems & Networks (DSN-05), pp. 60-69, Yokohama, Japan, 28 June - 01 July 2005. IEEE Computer Society Press, Los Alamitos, California, 2005.',
-        date: '2005',
+        date: 'June - July 2005',
         publisher: 'DSN-05',
         citedBy: 'https://scholar.google.com/scholar?cites=3506170524639402806&as_sdt=5,39&sciodt=0,39&hl=en',
     },
@@ -211,7 +211,7 @@ var publicationList = [
         link: 'https://ieeexplore.ieee.org/document/1311881',
         citation:
             'Killourhy, Kevin S.; Maxion, Roy A. and Tan, Kymie M. C. "A Defense-Centric Taxonomy Based on Attack Manifestations." In International Conference on Dependable Systems & Networks (DSN-04), pp. 102-111, Florence, Italy, 28 June - 01 July 2004. IEEE Computer Society Press, Los Alamitos, California, 2004.',
-        date: '2004',
+        date: 'June - July 2004',
         publisher: 'DSN-04',
         citedBy: 'https://scholar.google.com/scholar?cites=6310452479678320007&as_sdt=5,39&sciodt=0,39&hl=en',
     },
@@ -221,9 +221,9 @@ var publicationList = [
         link: 'https://ieeexplore.ieee.org/document/1311881',
         citation:
             'Maxion, Roy A. and Townsend, Tahlia N. "Masquerade Detection Augmented with Error Analysis." IEEE Transactions on Reliability, Special Section on Quality/Reliability Engineering of Information Systems, Vol. 53, No. 1, pp. 124-147, March 2004.',
-        date: '2004',
-        publisher: 'DSN-04',
-        citedBy: 'https://scholar.google.com/scholar?cites=6310452479678320007&as_sdt=5,39&sciodt=0,39&hl=en',
+        date: 'March 2004',
+        publisher: 'IEEE Transactions on Reliability',
+        citedBy: 'https://scholar.google.com/scholar?cites=1213619722567338105&as_sdt=5,39&sciodt=0,39&hl=en',
     },
     {
         keywords: 'Data privacy',
@@ -262,13 +262,13 @@ var publicationList = [
         citation:
             'Maxion, Roy A. and Townsend, Tahlia N. "Masquerade Detection Using Truncated Command Lines." International Conference on Dependable Systems and Networks (DSN-02), pp. 219-228, Washington, D.C. 23-26 June 2002. IEEE Computer Society Press, Los Alamitos, California, 2002.',
         date: 'June 2002',
-        publisher: 'DSN-2002',
+        publisher: 'DSN-02',
         citedBy: 'https://scholar.google.com/scholar?cites=11738963109920321399&as_sdt=5,39&sciodt=0,39&hl=en',
     },
     {
         keywords: 'Error analysis, Anomaly detection, Intrusion detection',
         title: 'Why 6? Defining the Operational Limits of stide, an Anomaly-Based Intrusion Detector',
-        link: 'https://ieeexplore.ieee.org/document/1028903',
+        link: 'https://ieeexplore.ieee.org/document/1004371',
         citation:
             'Tan, Kymie M. C. and Maxion, Roy A. "Why 6? Defining the Operational Limits of stide, an Anomaly-Based Intrusion Detector." IEEE Symposium on Security and Privacy, pages 188-201, Berkeley, California, 12-15 May 2002. IEEE Computer Society Press, Los Alamitos, California, 2002.',
         date: 'May 2002',
@@ -296,7 +296,7 @@ var publicationList = [
         citedBy: 'https://scholar.google.com/scholar?cites=14951597002778231695&as_sdt=5,39&sciodt=0,39&hl=en',
     },
     {
-        keywords: 'Exception Handling',
+        keywords: 'Exception handling',
         title: 'Eliminating Exception Handling Errors with Dependability Cases: A Comparative, Empirical Study',
         link: 'https://ieeexplore.ieee.org/document/877848',
         citation:
@@ -306,7 +306,7 @@ var publicationList = [
         citedBy: 'https://scholar.google.com/scholar?cites=217187384955937648&as_sdt=5,39&sciodt=0,39&hl=en',
     },
     {
-        keywords: 'Anomaly Detection',
+        keywords: 'Anomaly detection',
         title: 'Benchmarking Anomaly-Based Detection Systems',
         link: 'https://ieeexplore.ieee.org/document/857599',
         citation:
@@ -356,7 +356,7 @@ var publicationList = [
         citedBy: 'https://scholar.google.com/scholar?cites=7144844279502314799&as_sdt=5,39&sciodt=0,39&hl=en',
     },
     {
-        keywords: 'Anomaly Detection',
+        keywords: 'Anomaly detection',
         title: 'Detection and Discrimination of Injected Network Faults',
         link: 'https://ieeexplore.ieee.org/document/627323',
         citation:
@@ -366,7 +366,7 @@ var publicationList = [
         citedBy: 'https://scholar.google.com/scholar?cites=3851995735176640875&as_sdt=5,39&sciodt=0,39&hl=en',
     },
     {
-        keywords: 'Anomaly Detection',
+        keywords: 'Anomaly detection',
         title: 'A Case Study of Ethernet Anomalies in a Distributed Computing Environment',
         link: 'https://ieeexplore.ieee.org/document/58721',
         citation:
