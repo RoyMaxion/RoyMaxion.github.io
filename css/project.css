@@ -118,3 +118,21 @@ tr:hover {
     width: 100%;
     overflow-y: scroll;
 }
+
+.holder {
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.holder img {
+    flex:  1 1 0;
+    width: 50%;
+}
+
+.disclaimer {
+    background: #0001;
+    padding: 16px;
+    margin-top: 24px;
+    border-radius: 4px;
+    font-size: 80%;
+}

@@ -1,0 +1,1211 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+    "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+    <title>Keystroke Dynamics Benchmark Data Set</title>
+    <meta name="author" content="Roy Maxion" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+
+    <link rel="stylesheet" href="/css/global.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Raleway:wght@300;500;700&display=swap"
+    rel="stylesheet"
+    />
+
+    <!-- this page only -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <script src="/js/lab-field.js"></script>
+    <link rel="stylesheet" href="/css/project.css" />
+</HEAD>
+
+<BODY>
+
+    <!-- start: page navigation -->
+    <nav>
+        <span id="site-title">Roy Maxion</span>
+        <div id="site-navigation">
+            <a href="/index.html"><span>About</span></a>
+            <a href="/data.html"><span>Data Sets</span></a>
+            <a href="/publications.html"><span>Publications</span></a>
+            <a href="/contact.html"><span>Contact Me</span></a>
+        </div>
+    </nav>
+    <!-- end: page navigation -->
+
+    <span id="top"></span>
+
+    <main>
+
+        <h1>Keystroke Dynamics - Lab vs Field Data</h1>
+        <p class="subtitle">
+            Accompaniment to "TITLE" (CONF-DATE)
+        </p>
+        <p>Author: Vrishab Commuri and Roy Maxion (<a href="/contact.html">Contact Me</a>)</p>
+
+        <h2>Contents:</h2>
+
+        <DIV class="sec">
+
+            <p>This webpage presents two benchmark data sets for keystroke dynamics.  It is a
+                supplement to the paper "TITLE," by Vrishab Commuri and Roy Maxion, published in
+                the proceedings of the CONF DATE conference <A HREF="#ref1">[1]</A>.
+            The webpage is organized as follows:</p>
+
+            <UL>
+
+                <LI> <A HREF="#sec1">1. Introduction</A>: About this webpage </LI>
+
+                <LI> <A HREF="#sec2">2. The Datasets</A>: Two datasets, one collected in our lab and one collected in the field, each containing timing data for 100 unique subjects.</LI> 
+
+                <LI> <A HREF="#sec3">3. Contrasting Lab and Field Data:</A> Key differences between lab and field data.</LI>
+
+                <LI> <A HREF="#sec4">4. Lab vs Field Impact on Classification:</A> Error-rate and misclassification results for
+                the detectors: does lab vs field matter?</LI>
+
+                <LI> <A HREF="#sec5">5. References:</A> Relevant material and
+                acknowledgments</LI>
+
+            </UL>
+
+            <p>Sections 1 &ndash; 4 each consist of a brief explanation of their
+                contents, followed by a list of common questions that provide more
+                detail about the material.  Click on a question to show the answer, or
+            display all answers by clicking on:</p>
+
+            <UL>
+                <LI> <DIV class="hdr" onclick="toggleAll();">
+                SHOW &#x2f; HIDE answers to all questions below.</DIV>
+            </UL>
+
+        </DIV>
+
+        <HR>
+
+        <DIV ID="sec1">
+            <h2>1. Introduction</h2>
+
+            <DIV class="sec">
+
+                <p>On this webpage, we share the data, scripts, and results of our
+                    evaluation so that other researchers can use the data, reproduce our
+                    results, and extend them; or, use the data for investigations of
+                    related topics, such as intrusion, masquerader or insider detection.
+                    We hope these resources will be useful to the research
+                community.</p>
+
+                <h3>Common questions:</h3>
+
+                <UL>
+                    <LI> <DIV class="hdr" onclick="switchDisplay('q1-1');">
+                        Q1-1: What is keystroke dynamics (or keystroke biometrics)?
+                    </DIV></LI>
+
+                    <DIV id="q1-1"><DIV class="ans">
+
+                        Keystroke dynamics is the study of whether people can be distinguished
+                        by their typing rhythms, much like handwriting is used to identify the
+                        author of a written text.  Possible applications include acting as an
+                        electronic fingerprint, or in an access-control mechanism.  A digital
+                        fingerprint would tie a person to a computer-based crime in the same
+                        manner that a physical fingerprint ties a person to the scene of a
+                        physical crime.  Access control could incorporate keystroke dynamics
+                        both by requiring a legitimate user to type a password with the
+                        correct rhythm, and by continually authenticating that user while they
+                        type on the keyboard.
+
+                    </DIV></DIV>
+
+                    <LI> <DIV class="hdr" onclick="switchDisplay('q1-2');">
+                        Q1-2: What is your paper about?  What is this webpage for?
+                    </DIV></LI>
+
+                    <DIV id="q1-2"><DIV class="ans">
+
+                        In the field of keystroke dynamics, there are many different methods of collecting timing data from subjects. A data collection program can run in the browser, separate copies of the program can run on the personal computer of each subject, or a single program can run on one computer in a laboratory setting. In our paper, we show that collecting data outside of the laboratory setting can result in low-quality data. <BR><BR>
+
+
+                        Our intent with this webpage is to share our resources&mdash;the typing data,
+                        evaluation scripts, and the table of results&mdash;with the research
+                        community, and to answer questions that they (or you) might have.
+
+                    </DIV></DIV>
+
+                    <LI> <DIV class="hdr" onclick="switchDisplay('q1-3');">
+                        Q1-3: Where can I find a copy of the paper?
+                    </DIV></LI>
+
+                    <DIV id="q1-3"><DIV class="ans">
+
+                        The paper is included in the Proceedings of CONFERENCE NAME (CONF-DATE) Conference, published by PUBLISHER <A
+                        HREF="#ref1">[1]</A>.
+
+                    </DIV></DIV>
+
+                    <LI> <DIV class="hdr" onclick="switchDisplay('q1-4');">
+                        Q1-4: How would I cite this webpage in a publication?
+                    </DIV></LI>
+
+                    <DIV id="q1-4"><DIV class="ans">
+
+                        This webpage is a supplement to our original paper in CONF-DATE, and
+                        the paper refers readers to this website.  Consequently, we ask
+                        authors who find this web resource useful provide a citation to the
+                        original paper <A HREF="#ref1">[1]</A>.  See the citation in Section
+                        5, References, at the end of this web page.
+
+                    </DIV></DIV>
+
+                </UL>
+
+            </DIV> </DIV>
+
+
+            <DIV ID="sec2">
+                <h2>2. The Datasets </h2>
+
+                <DIV class="sec">
+
+                    <p>This section presents two datasets: one collected in our lab and one collected in the field. The data for both consist of keystroke-timing information from 100 subjects
+                        (typists), each typing a password (<CODE>.tie5Roanl</CODE>) 400 times.</p>
+
+                        <UL>
+                            <B>Lab:</B>
+                            <LI>
+                                <A HREF="lab_dataset.txt"><CODE>lab_dataset.txt</CODE></A>
+                            (Fixed-width format) ................... MD5 hash = ??</LI>
+
+                            <LI> <A HREF="lab_dataset.csv"><CODE>lab_dataset.csv</CODE></A>
+                            (Comma-separated-value format) MD5 hash = ??</LI>
+
+                            <LI><A HREF="lab_dataset.xls"><CODE>lab_dataset.xls</CODE></A>
+                            (Excel format) ............................. MD5 hash = ??</LI>
+                        </UL>
+
+                        <UL>
+                            <B>Field:</B>
+                            <LI>
+                                <A HREF="field_dataset.txt"><CODE>field_dataset.txt</CODE></A>
+                            (Fixed-width format) ................... MD5 hash = ??</LI>
+
+                            <LI> <A HREF="field_dataset.csv"><CODE>field_dataset.csv</CODE></A>
+                            (Comma-separated-value format) MD5 hash = ??</LI>
+
+                            <LI><A HREF="field_dataset.xls"><CODE>field_dataset.xls</CODE></A>
+                            (Excel format) ............................. MD5 hash = ??</LI>
+                        </UL>
+
+
+                        <h3>Common questions:</h3>
+
+                        <UL>
+
+                            <LI> <DIV class="hdr" onclick="switchDisplay('q2-1');">
+                                Q2-1: How were the data collected?
+                            </DIV></LI>
+
+                            <DIV id="q2-1"><DIV class="ans">
+
+                                <p>For complete details of our data collection methodology, we refer
+                                    readers to our original paper <A HREF="#ref1">[1]</A>.  A brief
+                                summary of our methodology follows.</p>
+
+                                <B>Lab:</B>
+
+                                <p>We built a keystroke data-collection apparatus consisting of: (1) a
+                                    laptop running Windows XP; (2) a Windows software application for presenting
+                                    stimuli to the subjects, and for recording their keystrokes; and (3)
+                                    an external reference timer for timestamping those keystrokes.  The
+                                    software presents the subject with the password to be typed.  As the
+                                    subject types the password, it is checked for correctness.  If the
+                                    subject makes a typographical error, the application prompts the
+                                    subject to retype the password.  In this manner, we record timestamps
+                                for 50 correctly typed passwords in each session.</p>
+
+                                <p>Whenever the subject presses or releases a key, the software
+                                    application records the event (i.e., keydown or keyup), the name of
+                                    the key involved, and a timestamp for the moment at which the
+                                    keystroke event occurred.  An external reference clock was used to
+                                    generate highly accurate timestamps.  The reference clock was
+                                    demonstrated to be accurate to within &#xb1;200 microseconds (by using
+                                    a function generator to simulate key presses at fixed
+                                intervals).</p>
+
+                                <p>We recruited 100 subjects (typists) from within a university community.
+                                    All subjects typed the same password, and each subject typed the
+                                    password 400 times over 8 sessions (50 repetitions per session).  They
+                                    waited at least one day between sessions, to capture some of the
+                                    day-to-day variation of each subject's typing.  The password
+                                    (<CODE>.tie5Roanl</CODE>) was chosen to be representative of a strong
+                                10-character password.</p>
+
+                                <p>The raw records of all the subjects' keystrokes and timestamps were
+                                    analyzed to create a password-timing table.  The password-timing table
+                                    encodes the timing features for each of the 400 passwords that each
+                                subject typed.</p>
+
+                                <B>Field:</B>
+
+                                <p>The same Windows application used to collect data for our lab dataset was 
+                                    adapted to run on the personal computer of each subject in our field dataset. 
+                                    Keystrokes were timestamped using two onboard timers available to Windows
+                                    programs: the Query Performance Counter (QPC) for high-resolution timestamps 
+                                    and the Tick Timer for standard, low-resolution timestamps. Only timing data 
+                                    from the QPC is presented in the field dataset; the Tick Timer timestamps were 
+                                used for sanity-checking our results.</p>
+
+                                <p>We recruited 100 subjects from various university communities. All 100 
+                                    subjects are distinct from the subjects in the lab dataset&mdash;there are no
+                                    subjects who contributed to both datasets. As in the lab dataset, all subjects
+                                    typed the same password (<CODE>.tie5Roanl</CODE>), and each subject typed the 
+                                password 400 times over 8 sessions (50 repetitions per session). </p>
+
+                                <p>The password-timing table for the field data was generated from the raw data 
+                                    in the same manner as the password-timing table for the lab data. Likewise, 
+                                    the field data password-timing table encodes the timing features for each of 
+                                the 400 passwords that each subject typed.</p>
+
+
+                            </DIV></DIV>
+
+                            <LI> <DIV class="hdr" onclick="switchDisplay('q2-2');">
+                                Q2-2: How do I read the data into R / Matlab / Weka / Excel / ...?
+                            </DIV>
+
+                            <DIV id="q2-2"><DIV class="ans">
+
+                                The data are provided in three different formats to make it easier for
+                                researchers visiting this page to view and manipulate the data.  In
+                                all its forms, the data are organized into a table, but different
+                                applications are better suited to different formats.<BR><BR>
+
+                                <I>(R)</I>: In the <A HREF="DSL-StrongPasswordData.txt">fixed-width
+                                format</A>, the columns of the table are separated by one or more
+                                spaces so that the information in each column is aligned vertically.
+                                This format is easy to read in a standard web browser or document
+                                editor with a fixed width font.  It can also be read by the standard
+                                data-input mechanisms of the statistical-programming environment <A
+                                HREF="http://www.r-project.org">R</A>.  Specifically, the
+                                <CODE>read.table</CODE> command can be used to read the data into a
+                                structure called a <CODE>data.frame</CODE>:<BR><BR>
+
+                                <CENTER>
+                                    <CODE> X <-read.table( 'DSL-StrongPasswordData.txt', header=TRUE ) </CODE>
+                                    </CENTER>
+                                    <BR>
+
+                                    <I>(Matlab and Weka)</I>: In the <A
+                                    HREF="DSL-StrongPasswordData.csv">comma-separated-value format</A>,
+                                    the columns of the table are separated by commas.  This format is
+                                    commonly read by most data-analysis packages (e.g., <A
+                                    HREF="http://www.mathworks.com/products/matlab/">Matlab</A>).  The <A
+                                    HREF="http://www.cs.waikato.ac.nz/ml/weka/">Weka data-mining
+                                software</A> has collected many machine-learning algorithms that might
+                                be brought to bear on the keystroke-dynamics data.  While Weka
+                                encourages the use of its own <A
+                                HREF="http://weka.wiki.sourceforge.net/ARFF">ARFF</A> data-input
+                                format, a researcher could convert a CSV into an ARFF-formatted file
+                                by prepending the appropriate header information.<BR><BR>
+
+                                <I>(Excel)</I>: In the <A HREF="DSL-StrongPasswordData.xls">Microsoft
+                                Excel binary-file format</A>, the columns of the table are encoded as
+                                a standard Excel spreadsheet.  This format can be used by researchers
+                                wishing to bring Excel's data analysis and graphing capabilities to
+                                bear on the data.<BR><BR>
+
+                                By making the data available in these three formats, we hope to make
+                                it easier for other researchers to use their preferred data-analysis
+                                tools.  In our own research, we use the fixed-width format and the <A
+                                HREF="http://www.r-project.org">R</A> statistical-programming
+                                environment.
+
+                            </DIV></DIV>
+
+                            <LI> <DIV class="hdr" onclick="switchDisplay('q2-3');">
+                                Q2-3: How are the data structured? What do the column names mean? (And why aren't the subject IDs consecutive?)
+                            </DIV></LI>
+                            <DIV id="q2-3"><DIV class="ans">
+
+                                (NOTE: the final dataset may have more columns, so this section may
+                                need to be updated.)<BR><BR>
+
+                                The data are arranged as a table with 34 columns.  Each row of data
+                                corresponds to the timing information for a single repetition of the
+                                password by a single subject.  The first column, <I>subject</I>, is a
+                                unique identifier for each subject (e.g., <CODE>s002</CODE> or
+                                <CODE>s057</CODE>).  Even though the data set contains 51 subjects,
+                                the identifiers do not range from <CODE>s001</CODE>
+                                to <CODE>s051</CODE>; subjects have been assigned unique IDs across a
+                                range of keystroke experiments, and not every subject participated in
+                                every experiment.  For instance, Subject 1 did not perform the
+                                password typing task and so <CODE>s001</CODE> does not appear in the
+                                data set.  The second column, <I>sessionIndex</I>, is the session in
+                                which the password was typed (ranging from 1 to 8).  The third
+                                column, <I>rep</I>, is the repetition of the password within the
+                                session (ranging from 1 to 50).<BR><BR>
+
+                                The remaining 31 columns present the timing information for the
+                                password.  The name of the column encodes the type of timing
+                                information.  Column names of the form <CODE>H.<I>key</I></CODE>
+                                designate a hold time for the named key (i.e., the time from when
+                                <I>key</I> was pressed to when it was released).  Column names of the
+                                form <CODE>DD.<I>key1</I>.<I>key2</I></CODE> designate a
+                                keydown-keydown time for the named digraph (i.e., the time from when
+                                <I>key1</I> was pressed to when <I>key2</I> was pressed).  Column
+                                names of the form <CODE>UD.<I>key1</I>.<I>key2</I></CODE> designate a
+                                keyup-keydown time for the named digraph (i.e., the time from when
+                                <I>key1</I> was released to when <I>key2</I> was pressed).  Note that
+                                <CODE>UD</CODE> times can be negative, and that <CODE>H</CODE> times
+                                and <CODE>UD</CODE> times add up to <CODE>DD</CODE> times.<BR><BR>
+
+                                Consider the following one-line example of what you will see in the data:
+                                <PRE>
+                                    subject  sessionIndex  rep      H.period   DD.period.t   UD.period.t     ...
+                                    s002             1    1        0.1491        0.3979        0.2488     ...
+                                </PRE>
+
+                                The example presents typing data for subject 2, session 1, repetition
+                                1.  The <CODE>period</CODE> key was held down for 0.1491 seconds
+                                (149.1 milliseconds); the time between pressing the
+                                <CODE>period</CODE> key and the <CODE>t</CODE> key (keydown-keydown
+                                time) was 0.3979 seconds; the time between releasing the
+                                <CODE>period</CODE> and pressing the <CODE>t</CODE> key (keyup-keydown
+                                time) was 0.2488 seconds; and so on.
+
+                            </DIV></DIV>
+
+                        </UL>
+
+                    </DIV></DIV>
+
+                    <DIV ID="sec3">
+                        <h2>3. Contrasting Lab and Field Data</h2>
+
+
+                        <DIV class="sec">
+
+                            In our analysis of lab and field datasets, we discovered several 
+                            artifacts common to data collected in the field. We present the 
+                            artifacts below.<BR><BR>
+
+                            <h3>USB Polling:</h3>
+                            <div class="holder">
+                                <img src="polling.png" alt="polling artifacts">
+                            </div>
+
+                            <p>USB keyboards do not report keystrokes immediately upon a keypress. Rather, 
+                                keystrokes are reported to the computer at a fixed timing interval set by the 
+                                keyboard. This interval, called the polling interval, is most often a 
+                                power of two. Since most subjects use USB keyboards, artifacts caused by USB
+                            polling are common in field data. </p>
+
+                            <p>We examined the foremost datasets in the keystroke dynamics community and found 
+                                that most contained USB polling artifacts, the only exceptions being our
+                                own 100-subject and 51-subject lab datasets for which an external timer was 
+                                used to timestamp keystrokes. A list of datasets that were analyzed is presented
+                            below.</p>
+
+
+                            <CENTER>
+                                <table border="0" width=350>
+                                    <tr><th>Dataset</th><th align="center">Contains USB Polling Artifacts</th></tr>
+                                    <tr>
+                                        <td align="center">100-subject Lab</td>
+                                        <td align="center">NO</td>
+                                    </tr>
+                                    <tr>
+                                        <td align="center">100-subject Field</td>
+                                        <td align="center">YES</td>
+                                    </tr>
+                                    <tr>
+                                        <td align="center">51-subject Lab</td>
+                                        <td align="center">NO</td>
+                                    </tr>
+                                    <tr>
+                                        <td align="center">GREYC</td>
+                                        <td align="center">YES</td>
+                                    </tr>
+                                    <tr>
+                                        <td align="center">WEBGREYC</td>
+                                        <td align="center">YES</td>
+                                    </tr>
+                                    <tr>
+                                        <td align="center">GREYC-NISLAB</td>
+                                        <td align="center">YES</td>
+                                    </tr>
+                                    <tr>
+                                        <td align="center">KEYSTROKE 100</td>
+                                        <td align="center">YES</td>
+                                    </tr>
+                                    <tr>
+                                        <td align="center">BIOCHAVES A</td>
+                                        <td align="center">YES</td>
+                                    </tr>
+                                    <tr>
+                                        <td align="center">BIOCHAVES B</td>
+                                        <td align="center">YES</td>
+                                    </tr>
+                                    <tr>
+                                        <td align="center">BIOCHAVES C</td>
+                                        <td align="center">YES</td>
+                                    </tr>
+                                    <tr>
+                                        <td align="center">136M</td>
+                                        <td align="center">YES</td>
+                                    </tr>
+                                    <tr>
+                                        <td align="center">BEIHANG A</td>
+                                        <td align="center">YES</td>
+                                    </tr>
+                                    <tr>
+                                        <td align="center">BEIHANG B</td>
+                                        <td align="center">YES</td>
+                                    </tr>
+                                </table>
+
+                            </CENTER><BR>
+
+                            <h3>Keyboard Change:</h3>
+                            <div class="holder">
+                                <img src="keyboard_change.png" alt="keyboard change artifact">
+                            </div>
+
+                            <p>In the field, subjects may change keyboards during the experiment. Different
+                                keyboards have different properties: different keyboard matrix scan rates, 
+                                actuation points, polling intervals, and baud rates to name a few. These differences
+                                can cause unpredictable changes in the collected data. In our dataset, these changes
+                                typically manifest in a mean shift of the data, change in observed polling interval, 
+                            or both.</p>
+
+                            <h3>Bursts:</h3>
+                            <div class="holder">
+                                <img src="bursts.png" alt="burst artifacts">
+                            </div>
+
+                            <p>One of the hazards of collecting data in the field is that the processing load on a
+                                subject's computer cannot be controlled. In the cases that the processing load is high,
+                                input lag may cause many keystrokes to be recorded at once&mdash;in a burst. We see
+                                some occurrences of this in our field dataset, where many consecutive features are
+                            recorded in quick succession, all presenting times of around 0ms.</p>
+
+                            <h3>Ramps:</h3>
+                            <div class="holder">
+                                <img src="ramps.png" alt="ramp artifacts">
+                            </div>
+
+
+                            <p>There exist several subjects for whom certain hold features have times that either 
+                                regularly increase or decrease over the course of a session. The cause of this artifact
+                                remains unknown. Perhaps related to this anomaly is a widening gap around 0ms in the
+                                up-down latency times for those same subjects. Because the regular increasing/decreasing
+                                nature of the data when plotted is reminiscent of a ramp, we call these ramp 
+                            artifacts.</p>
+
+
+
+                            <h3>Common questions:</h3>
+
+                            <UL>
+
+                                <LI> <DIV class="hdr" onclick="switchDisplay('q3-1');">
+                                    Q3-1: Can you tell me what the polling intervals for subjects in your field dataset are?
+                                </DIV></LI>
+
+                                <DIV id="q3-1"><DIV class="ans">
+
+                                    Yes. To accomplish this, we created two different programs to independently 
+                                    estimate polling intervals in our field dataset. Each program outputs both an estimate
+                                    and a level of supporting evidence on a scale from 0-2. A 0 represents no evidence and a 
+                                    2 represents the highest level of evidence. The output of both programs were combined to
+                                    create a total level of evidence scale from 0-4, when the programs agreed on the polling
+                                    interval. The following table presents the subjects whose polling interval was identified
+                                    with the highest level of evidence&mdash;a score of 4&mdash;from both programs. Bear in mind that this not 
+                                    a comprehensive list of subjects and their polling rates, just those that we could
+                                    identify polling intevals for with a high level of evidence.<BR><BR>
+
+
+                                    <CENTER>
+                                        <table border="0" width=250>
+                                            <thead>
+                                                <tr style="text-align: center;">
+                                                    <th>Subject</th>
+                                                    <th>Polling Interval Determined</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr align="center">
+                                                    <td>P1102</td>
+                                                    <td>8.0</td>
+                                                </tr>
+                                                <tr align="center">
+                                                    <td>P1103</td>
+                                                    <td>8.0</td>
+                                                </tr>
+                                                <tr align="center">
+                                                    <td>P1104</td>
+                                                    <td>8.0</td>
+                                                </tr>
+                                                <tr align="center">
+                                                    <td>P1107</td>
+                                                    <td>10.0</td>
+                                                </tr>
+                                                <tr align="center">
+                                                    <td>P1108</td>
+                                                    <td>8.0</td>
+                                                </tr>
+                                                <tr align="center">
+                                                    <td>P1110</td>
+                                                    <td>8.0</td>
+                                                </tr>
+                                                <tr align="center">
+                                                    <td>P1111</td>
+                                                    <td>8.0</td>
+                                                </tr>
+                                                <tr align="center">
+                                                    <td>P1112</td>
+                                                    <td>8.0</td>
+                                                </tr>
+                                                <tr align="center">
+                                                    <td>P1113</td>
+                                                    <td>8.0</td>
+                                                </tr>
+                                                <tr align="center">
+                                                    <td>P1114</td>
+                                                    <td>8.0</td>
+                                                </tr>
+                                                <tr align="center">
+                                                    <td>P1117</td>
+                                                    <td>8.0</td>
+                                                </tr>
+                                                <tr align="center">
+                                                    <td>P1118</td>
+                                                    <td>8.0</td>
+                                                </tr>
+                                                <tr align="center">
+                                                    <td>P1123</td>
+                                                    <td>8.0</td>
+                                                </tr>
+                                                <tr align="center">
+                                                    <td>P1127</td>
+                                                    <td>2.0</td>
+                                                </tr>
+                                                <tr align="center">
+                                                    <td>P1130</td>
+                                                    <td>8.0</td>
+                                                </tr>
+                                                <tr align="center">
+                                                    <td>P1131</td>
+                                                    <td>8.0</td>
+                                                </tr>
+                                                <tr align="center">
+                                                    <td>P1132</td>
+                                                    <td>4.0</td>
+                                                </tr>
+                                                <tr align="center">
+                                                    <td>P1133</td>
+                                                    <td>8.0</td>
+                                                </tr>
+                                                <tr align="center">
+                                                    <td>P1134</td>
+                                                    <td>4.0</td>
+                                                </tr>
+                                                <tr align="center">
+                                                    <td>P1135</td>
+                                                    <td>8.0</td>
+                                                </tr>
+                                                <tr align="center">
+                                                    <td>P1137</td>
+                                                    <td>8.0</td>
+                                                </tr>
+                                                <tr align="center">
+                                                    <td>P1144</td>
+                                                    <td>8.0</td>
+                                                </tr>
+                                                <tr align="center">
+                                                    <td>P1147</td>
+                                                    <td>8.0</td>
+                                                </tr>
+                                                <tr align="center">
+                                                    <td>P1148</td>
+                                                    <td>8.0</td>
+                                                </tr>
+                                                <tr align="center">
+                                                    <td>P1150</td>
+                                                    <td>8.0</td>
+                                                </tr>
+                                                <tr align="center">
+                                                    <td>P1152</td>
+                                                    <td>8.0</td>
+                                                </tr>
+                                                <tr align="center">
+                                                    <td>P1153</td>
+                                                    <td>8.0</td>
+                                                </tr>
+                                                <tr align="center">
+                                                    <td>P1154</td>
+                                                    <td>8.0</td>
+                                                </tr>
+                                                <tr align="center">
+                                                    <td>P1156</td>
+                                                    <td>16.0</td>
+                                                </tr>
+                                                <tr align="center">
+                                                    <td>P1157</td>
+                                                    <td>8.0</td>
+                                                </tr>
+                                                <tr align="center">
+                                                    <td>P1158</td>
+                                                    <td>8.0</td>
+                                                </tr>
+                                                <tr align="center">
+                                                    <td>P1159</td>
+                                                    <td>8.0</td>
+                                                </tr>
+                                                <tr align="center">
+                                                    <td>P1160</td>
+                                                    <td>8.0</td>
+                                                </tr>
+                                                <tr align="center">
+                                                    <td>P1162</td>
+                                                    <td>8.0</td>
+                                                </tr>
+                                                <tr align="center">
+                                                    <td>P1178</td>
+                                                    <td>8.0</td>
+                                                </tr>
+                                                <tr align="center">
+                                                    <td>P1180</td>
+                                                    <td>4.0</td>
+                                                </tr>
+                                                <tr align="center">
+                                                    <td>P1181</td>
+                                                    <td>16.0</td>
+                                                </tr>
+                                                <tr align="center">
+                                                    <td>P1182</td>
+                                                    <td>8.0</td>
+                                                </tr>
+                                                <tr align="center">
+                                                    <td>P1183</td>
+                                                    <td>4.0</td>
+                                                </tr>
+                                                <tr align="center">
+                                                    <td>P1188</td>
+                                                    <td>8.0</td>
+                                                </tr>
+                                                <tr align="center">
+                                                    <td>P1189</td>
+                                                    <td>8.0</td>
+                                                </tr>
+                                                <tr align="center">
+                                                    <td>P1190</td>
+                                                    <td>8.0</td>
+                                                </tr>
+                                                <tr align="center">
+                                                    <td>P1191</td>
+                                                    <td>8.0</td>
+                                                </tr>
+                                                <tr align="center">
+                                                    <td>P1192</td>
+                                                    <td>8.0</td>
+                                                </tr>
+                                                <tr align="center">
+                                                    <td>P1193</td>
+                                                    <td>16.0</td>
+                                                </tr>
+                                                <tr align="center">
+                                                    <td>P1195</td>
+                                                    <td>8.0</td>
+                                                </tr>
+                                                <tr align="center">
+                                                    <td>P1199</td>
+                                                    <td>8.0</td>
+                                                </tr>
+                                                <tr align="center">
+                                                    <td>P1202</td>
+                                                    <td>8.0</td>
+                                                </tr>
+                                                <tr align="center">
+                                                    <td>P1204</td>
+                                                    <td>8.0</td>
+                                                </tr>
+                                                <tr align="center">
+                                                    <td>P1206</td>
+                                                    <td>8.0</td>
+                                                </tr>
+                                                <tr align="center">
+                                                    <td>P1209</td>
+                                                    <td>16.0</td>
+                                                </tr>
+                                                <tr align="center">
+                                                    <td>P1210</td>
+                                                    <td>8.0</td>
+                                                </tr>
+                                                <tr align="center">
+                                                    <td>P1211</td>
+                                                    <td>8.0</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </CENTER>
+
+                                </DIV></DIV>
+
+                                <LI> <DIV class="hdr" onclick="switchDisplay('q3-2');">
+                                    Q3-2: Could there be more artifacts, perhaps from other datasets, that are not presented here?
+                                </DIV></LI>
+
+                                <DIV id="q3-2"><DIV class="ans">
+                                    Certainly. This list is by no means comprehensive; it just presents the artifacts that we
+                                    have observed so far. As more artifacts or explanations for current artifacts are brought
+                                    to our attention, we may update this list.
+
+                                </DIV></DIV>
+
+                                <LI> <DIV class="hdr" onclick="switchDisplay('q3-3');">
+                                    Q3-3: How can I avoid having these artifacts in my data?
+                                </DIV></LI>
+
+                                <DIV id="q3-3"><DIV class="ans">
+                                    <p>There are a few steps that can be taken to diminish the effect of some of these 
+                                        artifacts, but many of the confounding factors that are at the source of these artifacts
+                                        can never be fully eliminated. The only solution, then, is to use an external timer to 
+                                        timestamp keystrokes. If this is not an option, then the following measures may be 
+                                    taken:</p>
+
+                                    <UL>
+                                        <LI> USB Polling: Have subjects use either PS/2 keyboards or USB keyboards with a
+                                        low polling interval (such as gaming keyboards).</LI>
+                                        <LI> Keyboard Change: Ensure that subjects do not change keyboards for the duration
+                                        of the experiment.</LI>
+                                        <LI> Bursts: Encourage subjects to close programs running on their computer before 
+                                        contributing data.</LI>
+                                        <LI> Ramps: Since the cause of the ramps is unknown, we cannot provide any advice 
+                                            on how to avoid them. We encourage researchers to examine their data throughout
+                                        their experiments to avoid collecting data with ramps.</LI>
+                                    </UL>
+                                </DIV></DIV>
+                            </UL>
+                        </DIV>
+
+                        <DIV ID="sec4">
+                            <h2>4. Lab vs Field Impact on Classification</h2>
+
+                            <DIV class="sec">
+<!--
+The following table ranks 14 anomaly detectors based on their average
+equal-error rates.  The evaluation procedure described in the script
+above was used to obtain the equal-error rates for each anomaly
+detector.  For example, the average equal-error rate for the scaled
+Manhattan detector (across all subjects) was 9.62%, and the standard
+deviation was 0.0694.
+    
+-->
+<p>In our analysis of the foremost datasets in the keystroke dynamics community, we
+    identified USB polling as one of the most common artifacts present in field data. 
+    To assess the impact that polling has on classification, we compare the performance of 
+    classifiers run on our lab dataset, which contains no artifacts, and the same 
+    classifiers run on a degraded version of our lab dataset in order to emulate polling
+artifacts.</p>
+
+<p>The same evaluation methodology was used for all of the classifiers described here
+    and is the same method presented in our paper at the DSN 2009 conference. We 
+    direct readers to that paper for more details on the classifier evaluation
+methodology.</p>
+
+<h3>Polling Effect on Equal-Error Rate:</h3>
+
+<p>When evaluating a classifier, we desire a metric to summarize its performance.
+    For the classifiers assessed here, this metric is given as the average equal-error rate 
+    (EER). Changes in average EER as the lab dataset is degraded will indicate, at a high 
+    level, how the performance of the classifier is affected by polling. We begin the 
+    comparison by first establishing a baseline average EER for the classifier. The baseline 
+    is the average EER when the classifier is run on the unquantized lab dataset. Then, we 
+    compare the baseline to the performance of the classifier on varying degradations of the 
+lab data.</p>
+
+<p>The comparison between the baseline average EER and degraded average EER is standardized 
+through the use of percent error:  </p>
+<p>percent error = ( abs( baseline - observed ) / baseline ) · 100 . </p>
+<p>The advantage of using percent error is that it facilitates comparison between many 
+    classifiers that may have different baseline average EERs. The classification results
+    from four of the current top-performing classifiers&mdash;a Gaussian Mixture Model 
+    (GMM), Mahalanobis Distance Classifier (Mahalanobis), a Mahalanobis KNN 
+    (NearestNeighbor), and a Scaled Manhattan Distance Classifier (ScaledManhattan)
+    &mdash; for power-of-two polling intervals (since those are the most common) are 
+presented in the table below.</p>
+
+<CENTER>
+    <table>
+        <style>
+            .data-table {
+            }
+            .align-center {
+                text-align: center;
+            }
+        </style>
+
+        <table class="data-table" width=500>
+            <tr>
+                <th class="align-center">Classifier</th>
+                <th class="align-center">Polling Interval (ms)</th>
+                <th class="align-center">Avg EER</th>
+                <th class="align-center">Percent Error</th>
+            </tr>
+            <tr>
+                <td class="align-center">GMM</td>
+                <td class="align-center">NONE</td>
+                <td class="align-center">0.1044</td>
+                <td class="align-center">0</td>
+            </tr>
+            <tr>
+                <td class="align-center">GMM</td>
+                <td class="align-center">1</td>
+                <td class="align-center">0.1047</td>
+                <td class="align-center">0.2856</td>
+            </tr>
+            <tr>
+                <td class="align-center">GMM</td>
+                <td class="align-center">2</td>
+                <td class="align-center">0.1047</td>
+                <td class="align-center">0.3531</td>
+            </tr>
+            <tr>
+                <td class="align-center">GMM</td>
+                <td class="align-center">4</td>
+                <td class="align-center">0.1059</td>
+                <td class="align-center">1.4927</td>
+            </tr>
+            <tr>
+                <td class="align-center">GMM</td>
+                <td class="align-center">8</td>
+                <td class="align-center">0.1085</td>
+                <td class="align-center">3.9534</td>
+            </tr>
+            <tr>
+                <td class="align-center">GMM</td>
+                <td class="align-center">16</td>
+                <td class="align-center">0.1115</td>
+                <td class="align-center">6.8271</td>
+            </tr>
+            <tr>
+                <td class="align-center">GMM</td>
+                <td class="align-center">32</td>
+                <td class="align-center">0.1195</td>
+                <td class="align-center">14.4943</td>
+            </tr>
+            <tr>
+                <td class="align-center">Mahalanobis</td>
+                <td class="align-center">NONE</td>
+                <td class="align-center">0.1102</td>
+                <td class="align-center">0</td>
+            </tr>
+            <tr>
+                <td class="align-center">Mahalanobis</td>
+                <td class="align-center">1</td>
+                <td class="align-center">0.1174</td>
+                <td class="align-center">6.5105</td>
+            </tr>
+            <tr>
+                <td class="align-center">Mahalanobis</td>
+                <td class="align-center">2</td>
+                <td class="align-center">0.1166</td>
+                <td class="align-center">5.7279</td>
+            </tr>
+            <tr>
+                <td class="align-center">Mahalanobis</td>
+                <td class="align-center">4</td>
+                <td class="align-center">0.1177</td>
+                <td class="align-center">6.7711</td>
+            </tr>
+            <tr>
+                <td class="align-center">Mahalanobis</td>
+                <td class="align-center">8</td>
+                <td class="align-center">0.1162</td>
+                <td class="align-center">5.3627</td>
+            </tr>
+            <tr>
+                <td class="align-center">Mahalanobis</td>
+                <td class="align-center">16</td>
+                <td class="align-center">0.1218</td>
+                <td class="align-center">10.4763</td>
+            </tr>
+            <tr>
+                <td class="align-center">Mahalanobis</td>
+                <td class="align-center">32</td>
+                <td class="align-center">0.1284</td>
+                <td class="align-center">16.4405</td>
+            </tr>
+            <tr>
+                <td class="align-center">NearestNeighbor</td>
+                <td class="align-center">NONE</td>
+                <td class="align-center">0.0999</td>
+                <td class="align-center">0</td>
+            </tr>
+            <tr>
+                <td class="align-center">NearestNeighbor</td>
+                <td class="align-center">1</td>
+                <td class="align-center">0.1118</td>
+                <td class="align-center">11.9006</td>
+            </tr>
+            <tr>
+                <td class="align-center">NearestNeighbor</td>
+                <td class="align-center">2</td>
+                <td class="align-center">0.1102</td>
+                <td class="align-center">10.3592</td>
+            </tr>
+            <tr>
+                <td class="align-center">NearestNeighbor</td>
+                <td class="align-center">4</td>
+                <td class="align-center">0.1103</td>
+                <td class="align-center">10.4313</td>
+            </tr>
+            <tr>
+                <td class="align-center">NearestNeighbor</td>
+                <td class="align-center">8</td>
+                <td class="align-center">0.1106</td>
+                <td class="align-center">10.7302</td>
+            </tr>
+            <tr>
+                <td class="align-center">NearestNeighbor</td>
+                <td class="align-center">16</td>
+                <td class="align-center">0.1158</td>
+                <td class="align-center">15.8939</td>
+            </tr>
+            <tr>
+                <td class="align-center">NearestNeighbor</td>
+                <td class="align-center">32</td>
+                <td class="align-center">0.1237</td>
+                <td class="align-center">23.8181</td>
+            </tr>
+            <tr>
+                <td class="align-center">ScaledManhattan</td>
+                <td class="align-center">NONE</td>
+                <td class="align-center">0.0939</td>
+                <td class="align-center">0</td>
+            </tr>
+            <tr>
+                <td class="align-center">ScaledManhattan</td>
+                <td class="align-center">1</td>
+                <td class="align-center">0.0935</td>
+                <td class="align-center">0.3651</td>
+            </tr>
+            <tr>
+                <td class="align-center">ScaledManhattan</td>
+                <td class="align-center">2</td>
+                <td class="align-center">0.0939</td>
+                <td class="align-center">0.0017</td>
+            </tr>
+            <tr>
+                <td class="align-center">ScaledManhattan</td>
+                <td class="align-center">4</td>
+                <td class="align-center">0.0936</td>
+                <td class="align-center">0.317</td>
+            </tr>
+            <tr>
+                <td class="align-center">ScaledManhattan</td>
+                <td class="align-center">8</td>
+                <td class="align-center">0.0958</td>
+                <td class="align-center">2.0672</td>
+            </tr>
+            <tr>
+                <td class="align-center">ScaledManhattan</td>
+                <td class="align-center">16</td>
+                <td class="align-center">0.0983</td>
+                <td class="align-center">4.7347</td>
+            </tr>
+            <tr>
+                <td class="align-center">ScaledManhattan</td>
+                <td class="align-center">32</td>
+                <td class="align-center">0.1027</td>
+                <td class="align-center">9.4087</td>
+            </tr>
+        </table>
+    </CENTER><BR><BR>
+    
+    <h3>Polling Effect on Subject Misclassifications:</h3>
+    
+    <p>The full impact of polling on classification is not revealed solely by examining 
+        performance metrics. The subjects who are misclassified by the classifier are also
+        prone to change due to the effects of polling. For a complete treatment of the effect
+        of polling on misclassification, we refer readers to our paper. Here, we provide an 
+        example of what can change when only one subject in the dataset provides data with
+    polling artifacts:</p>
+    
+    <p>s040 after adding an 8ms polling interval to their data:</p>
+    
+    <UL>
+        <LI> Before polling, 151 of testing vectors from s040 were correctly classified.
+        After polling, only 131 of testing vectors from s040 were correctly classified.</LI>
+        <LI> 46 subjects were classified differently by s040's detector after polling 
+        artifacts were added to their data.</LI>
+        <LI> After polling, 17 subjects were misclassified as s040 who were not 
+            misclassified before. In an actual biometric system, this would mean 17 people
+        were falsely accused of breaking into s017's account.</LI>
+    </UL>
+
+
+    <h3>Common questions:</h3>
+
+
+    <UL>
+
+        <LI> <DIV class="hdr" onclick="switchDisplay('q4-1');">
+            Q4-1: How was the lab data degraded?
+        </DIV></LI>
+
+        <DIV id="q4-1"><DIV class="ans">
+
+            The degradation procedure is given by the following function where 'hi' is
+            a feature (hold, up-down latency, or down-down latency) time in the high-
+            resolution lab dataset, 'lo' is a feature time in the degraded lab dataset, δ is
+            the polling interval, and the round function implements a round-to-even policy:<BR><BR>
+
+            lo = δ · round( hi / δ )<BR><BR>
+
+            A round-to-even rounding policy was used to avoid the possible confound of biasing the 
+            data. In addition to being unbiased, a round-to-even is representative of data collected 
+            over USB. Consider the following scenarios for a polling interval of 8ms -- meaning the 
+            computer collects keystrokes from the keyboard buffer every 8ms. All times are absolute 
+            (starting from time t = 0) and each scenario is equally likely:<BR><BR>
+
+            <UL>
+                <LI>The user presses a key down at t = 1ms. The computer will not record the keydown 
+                    until t = 8ms -- the time of the next poll. Then, at time t = 16ms, the user 
+                    releases the key. Since the key was released on a multiple of 8, the computer 
+                    registers the keyup at t = 16ms. The user's actual hold time was 15ms, but the 
+                    computer registered your hold time as 8ms. This is a situation where the 
+                    computer recorded a hold time that was less than the user's actual hold time due 
+                to polling.</LI>
+                <LI>The user presses the key down at t = 8ms. The computer will record the keydown 
+                    at t = 8ms because it is a multiple of the polling interval. Then, at time t 
+                    = 17ms, the user releases the key. Since the user did not release the key on a 
+                    multiple of the polling interval, the computer registers the keyup at t = 24ms 
+                    -- the next multiple of the polling interval. The user's actual hold time was 
+                    9ms, but the computer registered their hold time as 16ms. This is a situation 
+                    where the computer recorded a hold time that was greater than the user's actual 
+                hold time due to polling.</LI>
+            </UL>
+
+
+
+        </DIV></DIV>
+
+
+        <LI> <DIV class="hdr" onclick="switchDisplay('q4-2');">
+            Q4-2: How do I interpret the table of classification results?
+        </DIV></LI>
+
+        <DIV id="q4-2"><DIV class="ans">
+
+            The first column indicates the name of the detector.  All of the
+            detectors in this list bear the names they were given in our original
+            paper.  The names are meant to describe the mathematical or
+            statistical technique that underlies the anomaly-detection strategy.
+            The reader interested in how each detector works will find additional
+            detail in the prose and references of our DSN 2009 paper.<BR><BR>
+
+            The second column presents the polling interval to which the lab dataset
+            was degraded before the detector was run. For example, a value of 8 in
+            this column indicates that the lab dataset was degraded to emulate a polling
+            interval of 8ms for all subjects.<BR><BR>
+
+            The third column provides the average equal-error rate of each
+            detector, as estimated by the evaluation methodology in the DSN 2009 paper.
+            <BR><BR>
+
+            The fourth column presents the percent error between the average equal-error 
+            rate in the third column and the baseline average equal-error rate for that 
+            detector (the average equal-error rate with no polling). Lower values for 
+            percent error indicate that a detector is more robust against polling artifacts
+            in the dataset.<BR><BR>
+
+            Note that these results are only the observed results of
+            a single evaluation on a single data set.  We would discourage a
+            reader from inferring that the better-performing detectors are necessarily
+            going to always outperform the other detectors.  We believe it is
+            likely that many factors&mdash;who the subjects are, what they type,
+            and specifically how the data are collected and analyzed&mdash;affect
+            the error rates of anomaly detectors used for keystroke dynamics.
+            Variations in these factors might change a detector's equal-error
+            rate, and might cause a different set of detectors to be among the top
+            performers.  A low percent error in this table suggests that a detector is
+            promising; but more data, and more evaluations will be needed to
+            determine how various factors affect keystroke-dynamics error rates.
+            This topic is a subject of our current and ongoing research.
+
+        </DIV></DIV>
+
+        <LI> <DIV class="hdr" onclick="switchDisplay('q4-3');">
+            Q4-3: Why do you use the average equal-error rate as the sole measure of
+            performance?
+        </DIV></LI>
+
+        <DIV id="q4-3"><DIV class="ans">
+
+            Summarizing the performance of an anomaly detector as a single number
+            is tricky.  There is no right way to do it that does not make some
+            concessions, or have some drawbacks.  As such, researchers in the
+            field have used a variety of measures.  In the original paper, we
+            reported both the equal-error rate and the zero-miss false-alarm rate,
+            since they are both used in the literature.  On this webpage, we
+            tabulate the equal-error rate of each detector because it is a common
+            measure of performance for many biometric systems.  If other,
+            demonstrably better measures of performance emerge, we will consider
+            the feasibility of calculating them on our evaluation data, and
+            updating this page with these better measures.
+
+        </DIV></DIV>
+
+
+    </UL>
+
+</DIV>
+</DIV>
+
+<DIV ID="sec5">
+    <h2>5. References</h2>
+
+    <DIV class="sec">
+
+        <DL class="bib">
+
+            <DT>1<DD> <DIV ID="ref1"> REFERENCE <A HREF="ref">(pdf)</A> </DIV> <BR>
+
+                <DT>2<DD> <DIV ID="ref2">REFERENCE  <A
+                    HREF="ref">(link)</A> </DIV>
+
+                </DL>
+
+            </DIV>
+
+        </DIV>
+
+        <DIV class="sec disclaimer">
+            This material is based upon work supported by the SUPPORTER under grant numbers 
+            GRANTNUM and GRANTNUM, and by the SUPPORTER through grant number 
+            GRANTNUM to CMUDIVISION/LAB.  Any opinions, findings, 
+            conclusions, or recommendations expressed in this material are those of the 
+            authors, and do not necessarily reflect the views of the SUPPORTER or the SUPPORTER.
+
+        </DIV>
+    </main>
+
+    <!-- start: back to top button -->
+    <a id="back-to-top-button" href="#top">
+        <span class="material-icons">arrow_upward</span>
+        Top
+    </a>
+
+    <!-- start: footer -->
+    <footer>
+        <span
+        >Copyright © Roy Maxion. Contents licensed under
+        <a href="https://creativecommons.org/licenses/by-nd/2.0/" target="_blank">CC-BY-ND 2.0</a></span
+        >
+    </footer>
+    <!-- end: footer -->
+
+</BODY>
+</HTML>
